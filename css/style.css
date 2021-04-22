@@ -11,7 +11,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth ;
 }
 *{
     padding:  0;
@@ -24,6 +24,8 @@ header{
     clip-path: polygon(0 0,100% 0, 100% 100%,70% 87%,0 100% );
     
 }
+
+/* PC */
 .container{
     max-width: 1152px;
     padding:0 15px;
@@ -31,6 +33,30 @@ header{
     
 }
 
+/* Phone */
+@media (min-width: 768px) {
+    .container{
+        max-width: 720px;;
+    }
+}
+/* tablet */
+@media (min-width: 576px) {
+    .container{
+        max-width: 540px;;
+    }
+}
+/* Small */
+@media (min-width: 992px) {
+    .container{
+        max-width: 960px;;
+    }
+}
+/* small laptop */
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1152px;;
+    }
+}
 header nav .left a{
     color: var(--pure);
     text-decoration:none;
@@ -46,6 +72,14 @@ header nav{
 }
 header nav .branding{
     margin-right:  3rem; 
+}
+
+.branding img{
+    display: block;
+}
+
+.hero .left img{
+    width: 400px;
 }
 .hero .right{
     color: var(--pure);
@@ -76,6 +110,7 @@ section{
 
 section.about .about-me-img{
     height: 450px;
+    border:4px solid blanchedalmond;
 }
 section.about h1{
     margin-bottom: 1rem;
@@ -270,4 +305,191 @@ section.contact .card-wrapper .card h6{
 }
 section.contact h1{
     font-size: 2rem;
+}
+footer{
+    display: block;
+    text-align:center;
+    background-color: DarkSalmon;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 5px;
+}
+
+
+
+.site-main-wrapper{
+    position: relative;
+}
+
+.hamberger{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+    
+}
+
+.hamberger img{
+    width: 30px;
+}
+
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: var(--light);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+    line-height: 5rem;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
+
+}
+
+.open{
+    transform: translateX(0);
+}
+
+
+.times{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+
+}
+.times img{
+    width: 30px;
+    margin-left: -9rem; 
+}
+.mobile-nav ul{
+    list-style-type:none;
+}
+
+.mobile-nav ul li a{
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+@media (max-width:1024px){
+    header #main-nav{
+        display: none;
+    }
+    branding{
+        display: block;
+    }
+    .hamberger{
+        display: block;
+    }
+    .hero .left img {
+        width: 279px;
+        margin-bottom: 0rem;
+        margin-left: -5rem;
+        margin-top: -3rem;
+    }
+    .hero{
+        padding-top: 6rem;
+    }
+    .hero .right p{
+        margin-bottom: 1rem;
+    }
+    header {
+        clip-path: polygon(0 0,100% 0, 100% 100%,30% 91%,0 100% );
+    }
+    section.about .about-me-img {
+        height: 261px;
+    }
+    section.services .card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+        grid-row-gap: 6rem;
+    }
+    section.contact .card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+    }
+}
+@media (max-width:576px) {
+    .hero{
+        flex-direction: column;
+    }
+    
+    header{
+        clip-path: polygon(0 0,100% 0, 100% 100%,68% 88%,0 100% );    
+    }
+    .hero .right{
+        position: absolute;
+        top: 206px;
+        padding:0 1rem;
+        margin-top: -5em;
+        background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.2));
+
+    }
+    
+
+    .hero .left img {
+        width: 267px;
+        height: 368px;
+    }
+    .hero .left{
+        margin-top: 2rem;
+        margin-right: -22rem;
+        
+    }
+    .about-inner-wrap{
+        flex-direction: column;
+    }
+    .about .right{
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+    .about .right .social{
+        justify-content: center;
+    }
+    section {
+        padding: 3rem 0;
+    }
+    section.services .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section.Freelancer h1 {
+         line-height: 2.5rem;
+    }
+    section.Freelancer {
+        clip-path: polygon(0 0,100% 0, 100% 100%,67% 89%,0 100% );
+        padding-bottom: 8rem;
+    }
+    section.Awards .slider .slide img{
+        width: 365px;
+        border-radius: 0%;
+        border: 8px solid #555;
+    }
+    .section-heading-award{
+        margin-bottom: 6rem;
+    }   
+    section.contact .card-wrapper{
+        grid-template-columns:repeat(1, 1fr);
+    }
+    section.contact .card-wrapper .card h1{
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+    }
+    section.Awards .slider .slide h2{
+        margin: 2rem;;
+    }
+    
 }
