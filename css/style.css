@@ -476,6 +476,7 @@ footer{
         width: 380px;
         border-radius: 0%;
         border: 8px solid #555;
+        margin-right: -1rem;
     }
     .section-heading-award{
         margin-bottom: 6rem;
