@@ -101,7 +101,7 @@
                     <div class="card">
                         <img src="./images/IOT.png" alt="">
                         <h2>Internet Of Things</h2>
-                        <p>Ardiuino</p><p>RasPi</p><p>NodeMCU</p>
+                        <p>Arduino</p><p>RasPi</p><p>NodeMCU</p>
     
                     </div>
                     <div class="card">
