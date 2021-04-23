@@ -428,7 +428,7 @@ footer{
     }
     
     header{
-        clip-path: polygon(0 0,100% 0, 100% 100%,68% 88%,0 100% );    
+        clip-path: polygon(0 0,100% 0, 100% 100%,68% 92%,0 100% );    
     }
     .hero .right{
         position: absolute;
