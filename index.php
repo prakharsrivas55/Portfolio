@@ -58,7 +58,7 @@
                     
                     
                 <h6>Prakhar Srivastava</h6>
-                <p>I am a <span> Web Developer</span> from Lucknow, India. I am passionate about building excellent websites and I enjoyed turning complex problems into simple, beautiful and innovative websites.</p>
+                <p>I am a <span> Web Developer</span> from Lucknow, India. I am passionate about building excellent websites and I enjoyed turning complex problems into simple, beautiful and innovative.</p>
                 <div>
                     <a href="/images/My Resume.pdf">
                 <button class="btn btn-secondary"> DOWNLOAD CV</button>
