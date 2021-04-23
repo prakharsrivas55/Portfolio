@@ -178,7 +178,7 @@
             <div class="card">
                 <img src="./images/address.png" alt="">
                 <h1>Address</h1>
-                <h6>LDA Colony Lucknow 226012, India</h6>
+                <h6>Lucknow, India</h6>
             </div>
     
             
