@@ -21,7 +21,7 @@ html{
 }
 header{
     background-color: var(--dark);
-    clip-path: polygon(0 0,100% 0, 100% 100%,70% 87%,0 100% );
+    clip-path: polygon(0 0,100% 0, 100% 100%,70% 87%,0 100%);
     
 }
 
