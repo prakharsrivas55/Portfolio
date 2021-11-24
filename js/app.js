@@ -29,7 +29,7 @@ times.addEventListener('click', function(){
 mobileNav.addEventListener('click', function(){
     mobileNav.classList.remove('open');
     
-});
+})
 
 times.addEventListener('click', function(){
 
